@@ -3,7 +3,7 @@ class QuotesController < ApplicationController
 
   # GET /quotes
   def index
-    @quotes = Quote.all
+    @quotes = Quote.all.reverse
 
     render json: @quotes
   end
